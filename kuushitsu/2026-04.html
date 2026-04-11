@@ -66,9 +66,12 @@ tr.room-tosho td { background: #fce4ec; }
 .slot-booked .slot-text { color: #333; font-weight: bold; }
 @media (max-width: 767px) { .table-wrap { display: none; } .mobile { display: block; } }
 @media (min-width: 768px) { .mobile { display: none !important; } }
-.cal-link { text-align: center; margin: 24px 0; }
-.cal-link a { display: inline-block; padding: 12px 32px; background: #1a73e8; color: #fff; text-decoration: none; border-radius: 8px; font-size: 1.1em; font-weight: bold; }
-.cal-link a:hover { background: #1557b0; }
+.cal-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin: 24px 0; }
+.cal-link { display: inline-block; padding: 12px 24px; text-decoration: none; border-radius: 8px; font-size: 1em; font-weight: bold; }
+.cal-link.primary { background: #1a73e8; color: #fff; }
+.cal-link.primary:hover { background: #1557b0; }
+.cal-link.secondary { background: #fff; color: #1a73e8; border: 1px solid #1a73e8; }
+.cal-link.secondary:hover { background: #e8f0fe; }
 .footer { text-align: center; padding: 16px 0; border-top: 1px solid #ddd; margin-top: 24px; font-size: 0.9em; color: #666; }
 .footer .phone { font-size: 1.2em; margin-top: 4px; }
 .footer .phone a { color: #1a73e8; text-decoration: none; }</style>
@@ -77,7 +80,7 @@ tr.room-tosho td { background: #fce4ec; }
 <header class="header">
 <h1>関ヶ谷自治会館 空室情報</h1>
 <p class="month-label">2026年4月</p>
-<p class="updated">最終更新: 2026/04/12 03:16</p>
+<p class="updated">最終更新: 2026/04/12 03:24</p>
 </header>
 <nav class="nav">
 <a href="2026-03.html">&larr; 前月</a>
@@ -3122,8 +3125,9 @@ tr.room-tosho td { background: #fce4ec; }
 </div>
 </div>
 </div>
-<div class="cal-link">
-<a href="../calendar/">カレンダーを見る</a>
+<div class="cal-links">
+<a href="../weekly/" class="cal-link primary">週間カレンダーを見る</a>
+<a href="../calendar/" class="cal-link secondary">カレンダー一覧（PC版）</a>
 </div>
 <footer class="footer">
 <p>予約は関ヶ谷自治会館事務局まで</p>
