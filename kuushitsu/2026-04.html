@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>関ヶ谷自治会館 使用日程表 2026年4月</title>
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: 16px; line-height: 1.5; color: #333; background: #f9f9f9; padding: 12px; }
+.header { text-align: center; margin-bottom: 16px; }
+.header h1 { font-size: 1.3em; margin-bottom: 4px; }
+.updated { font-size: 0.85em; color: #888; }
+.nav { display: flex; justify-content: center; gap: 24px; margin-bottom: 16px; }
+.nav a { font-size: 1em; color: #1a73e8; text-decoration: none; padding: 6px 16px; border: 1px solid #1a73e8; border-radius: 6px; }
+.nav a:hover { background: #e8f0fe; }
+.nav .current { font-weight: bold; font-size: 1.1em; padding: 6px 0; border: none; color: #333; pointer-events: none; }
+.legend { display: flex; flex-wrap: wrap; gap: 8px 16px; margin-bottom: 16px; font-size: 0.85em; align-items: center; }
+.legend-item { display: flex; align-items: center; gap: 4px; }
+.legend-color { width: 16px; height: 16px; border-radius: 3px; border: 1px solid #ccc; }
+.legend-sep { width: 1px; height: 16px; background: #ccc; }
+.table-wrap { overflow-x: auto; margin-bottom: 24px; }
+table { border-collapse: collapse; font-size: 0.85em; }
+th, td { border: 1px solid #ccc; padding: 4px 6px; text-align: center; white-space: nowrap; min-width: 2.5em; }
+td { white-space: normal; word-break: break-all; min-width: 4em; }
+.corner { background: #e0e0e0; position: sticky; left: 0; z-index: 3; }
+.slot-header { background: #e0e0e0; position: sticky; left: 0; z-index: 2; font-weight: bold; white-space: nowrap; }
+.slot-time { font-size: 0.75em; font-weight: normal; color: #666; }
+.room-header { background: #f0f0f0; position: sticky; left: 4em; z-index: 2; font-weight: normal; white-space: nowrap; }
+.day-header, .dow-header { background: #f0f0f0; position: sticky; top: 0; z-index: 1; }
+.day-header.holiday, .dow-header.holiday { color: #d32f2f; }
+.day-header.saturday, .dow-header.saturday { color: #1565c0; }
+tr.room-kaigi td { background: #fff8e1; }
+tr.room-washitsu td { background: #e3f2fd; }
+tr.room-tosho td { background: #fce4ec; }
+.cell-empty { background: inherit; }
+.today-col { outline: 2px solid #1a73e8; outline-offset: -1px; }
+.today-header { background: #1a73e8 !important; color: #fff !important; }
+.cards { display: none; }
+.card { background: #fff; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 10px; overflow: hidden; }
+.card-header { padding: 10px 14px; font-weight: bold; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+.card-header::after { content: "▼"; font-size: 0.7em; color: #999; transition: transform 0.2s; }
+.card.open .card-header::after { transform: rotate(180deg); }
+.card-header.holiday { background: #fff0f0; color: #d32f2f; }
+.card-header.today { background: #1a73e8; color: #fff; }
+.card-body { display: none; padding: 0; }
+.card.open .card-body { display: block; }
+.card-row { display: flex; justify-content: space-between; padding: 8px 14px; border-top: 1px solid #eee; font-size: 0.95em; }
+.card-row .label { color: #666; flex-shrink: 0; margin-right: 8px; }
+.card-row .value { text-align: right; font-weight: bold; }
+.card-row .value.empty { color: #4caf50; font-weight: normal; }
+@media (max-width: 767px) { .table-wrap { display: none; } .cards { display: block; } }
+@media (min-width: 768px) { .cards { display: none !important; } }
+.footer { text-align: center; padding: 16px 0; border-top: 1px solid #ddd; margin-top: 24px; font-size: 0.9em; color: #666; }
+.footer .phone { font-size: 1.2em; margin-top: 4px; }
+.footer .phone a { color: #1a73e8; text-decoration: none; }</style>
+</head>
+<body>
+<header class="header">
+<h1>関ヶ谷自治会館 使用日程表 2026年4月</h1>
+<p class="updated">最終更新: 2026/04/12 00:11</p>
+</header>
+<nav class="nav">
+<a href="2026-03.html">&larr; 前月</a>
+<span class="current">2026年4月</span>
+<a href="2026-05.html">翌月 &rarr;</a>
+</nav>
+<div class="legend">
+<div class="legend-item"><span class="legend-color" style="background:#fff8e1"></span>会議室</div>
+<div class="legend-item"><span class="legend-color" style="background:#e3f2fd"></span>和室</div>
+<div class="legend-item"><span class="legend-color" style="background:#fce4ec"></span>図書室</div>
+<div class="legend-item"><span class="legend-color" style="background:#fff;border:1px dashed #4caf50"></span>空欄＝空き</div>
+<div class="legend-sep"></div>
+<div class="legend-item">午前 9:00-12:00 / 午後 13:00-16:00 / 夜間 17:00-20:00</div>
+</div>
+<div class="table-wrap">
+<table>
+<thead>
+<tr><th class="corner" rowspan="2">区分</th><th class="corner" rowspan="2">部屋</th>
+<th class="day-header " data-date="1">1</th>
+<th class="day-header " data-date="2">2</th>
+<th class="day-header " data-date="3">3</th>
+<th class="day-header saturday" data-date="4">4</th>
+<th class="day-header holiday" data-date="5">5</th>
+<th class="day-header " data-date="6">6</th>
+<th class="day-header " data-date="7">7</th>
+<th class="day-header " data-date="8">8</th>
+<th class="day-header " data-date="9">9</th>
+<th class="day-header " data-date="10">10</th>
+<th class="day-header saturday" data-date="11">11</th>
+<th class="day-header holiday" data-date="12">12</th>
+<th class="day-header " data-date="13">13</th>
+<th class="day-header " data-date="14">14</th>
+<th class="day-header " data-date="15">15</th>
+<th class="day-header " data-date="16">16</th>
+<th class="day-header " data-date="17">17</th>
+<th class="day-header saturday" data-date="18">18</th>
+<th class="day-header holiday" data-date="19">19</th>
+<th class="day-header " data-date="20">20</th>
+<th class="day-header " data-date="21">21</th>
+<th class="day-header " data-date="22">22</th>
+<th class="day-header " data-date="23">23</th>
+<th class="day-header " data-date="24">24</th>
+<th class="day-header saturday" data-date="25">25</th>
+<th class="day-header holiday" data-date="26">26</th>
+<th class="day-header " data-date="27">27</th>
+<th class="day-header " data-date="28">28</th>
+<th class="day-header holiday" data-date="29">29</th>
+<th class="day-header " data-date="30">30</th>
+</tr>
+<tr>
+<th class="dow-header ">水</th>
+<th class="dow-header ">木</th>
+<th class="dow-header ">金</th>
+<th class="dow-header saturday">土</th>
+<th class="dow-header holiday">日</th>
+<th class="dow-header ">月</th>
+<th class="dow-header ">火</th>
+<th class="dow-header ">水</th>
+<th class="dow-header ">木</th>
+<th class="dow-header ">金</th>
+<th class="dow-header saturday">土</th>
+<th class="dow-header holiday">日</th>
+<th class="dow-header ">月</th>
+<th class="dow-header ">火</th>
+<th class="dow-header ">水</th>
+<th class="dow-header ">木</th>
+<th class="dow-header ">金</th>
+<th class="dow-header saturday">土</th>
+<th class="dow-header holiday">日</th>
+<th class="dow-header ">月</th>
+<th class="dow-header ">火</th>
+<th class="dow-header ">水</th>
+<th class="dow-header ">木</th>
+<th class="dow-header ">金</th>
+<th class="dow-header saturday">土</th>
+<th class="dow-header holiday">日</th>
+<th class="dow-header ">月</th>
+<th class="dow-header ">火</th>
+<th class="dow-header holiday">水</th>
+<th class="dow-header ">木</th>
+</tr>
+</thead>
+<tbody>
+<tr class="room-kaigi">
+<th class="slot-header" rowspan="4">午前<br><span class="slot-time">09:00-12:00</span></th>
+<th class="room-header">会議室</th>
+<td class="">町内会役員会</td>
+<td class="cell-empty"></td>
+<td class="">自治会総会</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">老人会</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">子ども会</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">町内会役員会</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-washitsu">
+<th class="room-header">和室（畳側）</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">書道教室</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">ヨガ教室</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">ヨガ教室</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">ヨガ教室</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-washitsu">
+<th class="room-header">和室（椅子側）</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-tosho">
+<th class="room-header">図書室</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">読み聞かせ</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-kaigi">
+<th class="slot-header" rowspan="4">午後<br><span class="slot-time">13:00-16:00</span></th>
+<th class="room-header">会議室</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">福祉委員会</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">防災訓練打合せ</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-washitsu">
+<th class="room-header">和室（畳側）</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-washitsu">
+<th class="room-header">和室（椅子側）</th>
+<td class="cell-empty"></td>
+<td class="">手芸サークル</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="">将棋クラブ</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-tosho">
+<th class="room-header">図書室</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-kaigi">
+<th class="slot-header" rowspan="4">夜間<br><span class="slot-time">17:00-20:00</span></th>
+<th class="room-header">会議室</th>
+<td class="">自治会理事会</td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-washitsu">
+<th class="room-header">和室（畳側）</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-washitsu">
+<th class="room-header">和室（椅子側）</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+<tr class="room-tosho">
+<th class="room-header">図書室</th>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+<td class="cell-empty"></td>
+</tr>
+</tbody></table>
+</div>
+<div class="cards">
+<div class="card" data-date="1">
+<div class="card-header">
+<span>1日 (水) 10/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value">町内会役員会</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value">自治会理事会</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="2">
+<div class="card-header">
+<span>2日 (木) 11/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value">手芸サークル</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="3">
+<div class="card-header">
+<span>3日 (金) 10/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value">自治会総会</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value">書道教室</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="4">
+<div class="card-header">
+<span>4日 (土) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="5">
+<div class="card-header holiday">
+<span>5日 (日) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="6">
+<div class="card-header">
+<span>6日 (月) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="7">
+<div class="card-header">
+<span>7日 (火) 9/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value">老人会</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value">ヨガ教室</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value">福祉委員会</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="8">
+<div class="card-header">
+<span>8日 (水) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="9">
+<div class="card-header">
+<span>9日 (木) 11/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value">将棋クラブ</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="10">
+<div class="card-header">
+<span>10日 (金) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="11">
+<div class="card-header">
+<span>11日 (土) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="12">
+<div class="card-header holiday">
+<span>12日 (日) 10/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value">子ども会</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value">読み聞かせ</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="13">
+<div class="card-header">
+<span>13日 (月) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="14">
+<div class="card-header">
+<span>14日 (火) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="15">
+<div class="card-header">
+<span>15日 (水) 11/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value">防災訓練打合せ</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="16">
+<div class="card-header">
+<span>16日 (木) 11/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value">ヨガ教室</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="17">
+<div class="card-header">
+<span>17日 (金) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="18">
+<div class="card-header">
+<span>18日 (土) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="19">
+<div class="card-header holiday">
+<span>19日 (日) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="20">
+<div class="card-header">
+<span>20日 (月) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="21">
+<div class="card-header">
+<span>21日 (火) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="22">
+<div class="card-header">
+<span>22日 (水) 10/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value">町内会役員会</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value">ヨガ教室</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="23">
+<div class="card-header">
+<span>23日 (木) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="24">
+<div class="card-header">
+<span>24日 (金) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="25">
+<div class="card-header">
+<span>25日 (土) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="26">
+<div class="card-header holiday">
+<span>26日 (日) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="27">
+<div class="card-header">
+<span>27日 (月) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="28">
+<div class="card-header">
+<span>28日 (火) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="29">
+<div class="card-header holiday">
+<span>29日 (水) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+<div class="card" data-date="30">
+<div class="card-header">
+<span>30日 (木) 12/12 空き</span>
+</div>
+<div class="card-body">
+<div class="card-row">
+<span class="label">午前 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午前 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">午後 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 会議室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（畳側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 和室（椅子側）</span>
+<span class="value empty">◎ 空き</span>
+</div>
+<div class="card-row">
+<span class="label">夜間 図書室</span>
+<span class="value empty">◎ 空き</span>
+</div>
+</div></div>
+</div>
+<footer class="footer">
+<p>予約は関ヶ谷自治会館事務局まで</p>
+<p class="phone"><a href="tel:045-784-4447">045-784-4447</a></p>
+</footer>
+<script>(function() {
+  var today = new Date();
+  if (today.getFullYear() === 2026 && today.getMonth() === 3) {
+    var d = today.getDate();
+    // テーブル: 今日の列をハイライト
+    document.querySelectorAll("th[data-date=\"" + d + "\"]").forEach(function(th) {
+      th.classList.add("today-header");
+    });
+    var colIndex = d + 1;
+    document.querySelectorAll("tbody tr").forEach(function(tr) {
+      var tds = tr.querySelectorAll("td");
+      if (tds[d - 1]) tds[d - 1].classList.add("today-col");
+    });
+    // カード: 今日を自動展開
+    var card = document.querySelector(".card[data-date=\"" + d + "\"]");
+    if (card) {
+      card.querySelector(".card-header").classList.add("today");
+      card.classList.add("open");
+    }
+  }
+  // カード開閉
+  document.querySelectorAll(".card-header").forEach(function(h) {
+    h.addEventListener("click", function() { this.parentElement.classList.toggle("open"); });
+  });
+})();</script>
+</body></html>
