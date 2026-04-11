@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>関ヶ谷自治会館 カレンダー一覧</title>
+<style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: 16px; line-height: 1.5; color: #333; background: #f9f9f9; padding: 12px; }
+.header { text-align: center; margin-bottom: 12px; }
+.header h1 { font-size: 1.3em; margin-bottom: 4px; }
+.note { font-size: 0.85em; color: #d32f2f; font-weight: bold; }
+.back-link { text-align: center; margin-bottom: 16px; }
+.back-link a { color: #1a73e8; text-decoration: none; font-size: 1em; padding: 6px 16px; border: 1px solid #1a73e8; border-radius: 6px; }
+.back-link a:hover { background: #e8f0fe; }
+.tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; justify-content: center; }
+.tab { padding: 8px 16px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-family: inherit; font-size: 0.95em; }
+.tab.active { border-color: #1a73e8; background: #1a73e8; color: #fff; }
+.cal-panel { display: none; }
+.cal-panel.active { display: block; }
+.cal-panel iframe { width: 100%; height: 600px; border: 1px solid #ddd; border-radius: 8px; }
+@media (max-width: 767px) {
+  .tab { padding: 6px 12px; font-size: 0.85em; }
+  .cal-panel iframe { height: 450px; }
+}
+.footer { text-align: center; padding: 16px 0; border-top: 1px solid #ddd; margin-top: 24px; font-size: 0.85em; color: #999; }</style>
+</head>
+<body>
+<header class="header">
+<h1>関ヶ谷自治会館 カレンダー一覧</h1>
+<p class="note">見るだけのカレンダーです。予約の追加・変更はスプレッドシートで行ってください。</p>
+</header>
+<nav class="back-link">
+<a href="../kuushitsu/">空室情報を見る</a>
+</nav>
+<div class="tabs">
+<button class="tab active" data-index="0">役員</button>
+<button class="tab" data-index="1">事務局</button>
+<button class="tab" data-index="2">委員会</button>
+<button class="tab" data-index="3">地区長・班長</button>
+<button class="tab" data-index="4">自主活動部</button>
+<button class="tab" data-index="5">使用状況</button>
+<button class="tab" data-index="6">自治会館 使用状況</button>
+</div>
+<div class="cal-panel active" data-index="0">
+<iframe src="https://calendar.google.com/calendar/embed?src=c011689bd86e9af5d6c0ec1d53a9446917a7dd7a09b5b52fec2770e13c54b0b8%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cal-panel" data-index="1">
+<iframe src="https://calendar.google.com/calendar/embed?src=390aae4349d9d580e82f8d91cfd766ad731e3f42a39bcaaf121b2ff049fed5ae%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cal-panel" data-index="2">
+<iframe src="https://calendar.google.com/calendar/embed?src=8e86a61a7d4055939d03b183dc0df2b127afe718894493e2b5e38eb75f4ac895%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cal-panel" data-index="3">
+<iframe src="https://calendar.google.com/calendar/embed?src=b572b19325d0d80a2e41f946569b0e7a973c40d9fbc3e3f96a9168348c4b43e4%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cal-panel" data-index="4">
+<iframe src="https://calendar.google.com/calendar/embed?src=e37befb051e671bf1aaf5bd1ea18aa21c3ca96a45a2a7f7efcc6c758f393a372%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cal-panel" data-index="5">
+<iframe src="https://calendar.google.com/calendar/embed?src=b145ae0dca6f49005057c70498238f71ca7a3dd3dede81f36be82185e00f2af7%40group.calendar.google.com&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<div class="cal-panel" data-index="6">
+<iframe src="https://calendar.google.com/calendar/embed?src=true&ctz=Asia%2FTokyo&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&hl=ja" frameborder="0" scrolling="no"></iframe>
+</div>
+<footer class="footer">
+<p>このカレンダーは自動生成されています。直接編集しても反映されません。</p>
+</footer>
+<script>(function() {
+  var tabs = document.querySelectorAll(".tab");
+  var panels = document.querySelectorAll(".cal-panel");
+  tabs.forEach(function(tab) {
+    tab.addEventListener("click", function() {
+      var idx = this.dataset.index;
+      tabs.forEach(function(t) { t.classList.remove("active"); });
+      panels.forEach(function(p) { p.classList.remove("active"); });
+      this.classList.add("active");
+      document.querySelector(".cal-panel[data-index=\"" + idx + "\"]").classList.add("active");
+    });
+  });
+})();</script>
+</body></html>
