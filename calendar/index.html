@@ -3,15 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>関ヶ谷自治会館 カレンダー一覧</title>
+<title>関ヶ谷自治会 カレンダー一覧</title>
 <style>*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; font-size: 16px; line-height: 1.5; color: #333; background: #f9f9f9; padding: 12px; }
 .header { text-align: center; margin-bottom: 12px; }
 .header h1 { font-size: 1.3em; margin-bottom: 4px; }
-.note { font-size: 0.85em; color: #d32f2f; font-weight: bold; }
-.back-link { text-align: center; margin-bottom: 16px; }
-.back-link a { color: #1a73e8; text-decoration: none; font-size: 1em; padding: 6px 16px; border: 1px solid #1a73e8; border-radius: 6px; }
-.back-link a:hover { background: #e8f0fe; }
+.nav-links { display: flex; justify-content: center; gap: 12px; margin-bottom: 16px; }
+.nav-links a { color: #1a73e8; text-decoration: none; font-size: 0.95em; padding: 6px 16px; border: 1px solid #1a73e8; border-radius: 6px; }
+.nav-links a:hover { background: #e8f0fe; }
 .tabs { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; justify-content: center; }
 .tab { padding: 8px 16px; border: 2px solid #ddd; border-radius: 8px; background: #fff; cursor: pointer; font-family: inherit; font-size: 0.95em; }
 .tab.active { border-color: #1a73e8; background: #1a73e8; color: #fff; }
@@ -26,11 +25,11 @@ body { font-family: "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif; fon
 </head>
 <body>
 <header class="header">
-<h1>関ヶ谷自治会館 カレンダー一覧</h1>
-<p class="note">見るだけのカレンダーです。予約の追加・変更はスプレッドシートで行ってください。</p>
+<h1>関ヶ谷自治会 カレンダー一覧</h1>
 </header>
-<nav class="back-link">
-<a href="../kuushitsu/">空室情報を見る</a>
+<nav class="nav-links">
+<a href="../kuushitsu/">空室情報</a>
+<a href="../weekly/">週間カレンダー（スマホ版）</a>
 </nav>
 <div class="tabs">
 <button class="tab active" data-index="0">全体</button>
